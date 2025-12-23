@@ -36,10 +36,11 @@ body {
 
   /* BLACK OUTLINE */
   text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    3px -3px 0 #000,
-    -3px -3px 0 #000;
+    text-shadow:
+  4px 4px 0 #000,
+  -4px 4px 0 #000,
+  4px -4px 0 #000,
+  -4px -4px 0 #000;
 }
 
 .site-title:hover,
