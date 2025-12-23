@@ -12,13 +12,15 @@ body {
   color: #000000;
 }
 
-/* HEADER BAR */
+/* =========================
+   HEADER (CYAN)
+   ========================= */
 .top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 20px;
-  background: #1f7a1f;
+  background: #00cfd1; /* CYAN HEADER */
 }
 
 /* LEFT ICONS */
@@ -28,61 +30,71 @@ body {
 }
 
 .left-icons a {
+  color: #000000;
   text-decoration: none;
   font-size: 18px;
 }
 
 /* CENTER AREA */
 .center {
-  text-align: center;
   flex: 1;
+  text-align: center;
 }
 
-/* TS3M TITLE — BLUE, NEVER CHANGES */
+/* =========================
+   SITE TITLE (TS3M)
+   ========================= */
 .site-title {
   font-size: 32px;
-  color: #3fa9f5;          /* BLUE */
+  color: #3fa9f5;       /* BLUE */
   text-decoration: none;
   display: inline-block;
 }
 
-.site-title:visited,
 .site-title:hover,
+.site-title:visited,
 .site-title:active {
-  color: #3fa9f5;          /* ALWAYS BLUE */
+  color: #3fa9f5;       /* NEVER CHANGES */
   text-decoration: none;
 }
 
-/* NAV LINKS — BLACK → WHITE */
+/* =========================
+   NAVIGATION
+   ========================= */
 .nav {
   margin-top: 6px;
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 14px;
   font-size: 14px;
 }
 
+/* DEFAULT = BLACK */
 .nav a {
-  color: #000000;          /* BLACK */
-  text-decoration: none;  /* NO UNDERLINE */
+  color: #000000;
+  text-decoration: none;
 }
 
+/* VISITED STAYS BLACK */
 .nav a:visited {
-  color: #000000;          /* STAYS BLACK */
+  color: #000000;
 }
 
+/* HOVER / CLICK = WHITE */
 .nav a:hover,
 .nav a:active {
-  color: #ffffff;          /* WHITE ON HOVER/CLICK */
+  color: #ffffff;
 }
 
-/* DOT SEPARATORS */
+/* SEPARATORS */
 .sep {
   color: #000000;
   user-select: none;
 }
 
-/* SUBSCRIBE BUTTON */
+/* =========================
+   SUBSCRIBE BUTTON
+   ========================= */
 .subscribe {
   background: #ffd700;
   color: #000000;
@@ -96,7 +108,9 @@ body {
   filter: brightness(0.95);
 }
 
-/* CONTENT */
+/* =========================
+   CONTENT
+   ========================= */
 .content {
   padding: 24px;
 }
@@ -130,7 +144,9 @@ body {
   font-size: 14px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 .footer {
   margin-top: 30px;
   padding: 14px;
