@@ -72,3 +72,11 @@ body {
   font-weight: bold;
   font-size: 16px;
 }
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #555;       /* grey text */
+  background: #f3f3f3; /* match card background */
+  margin-top: 20px;
+}
