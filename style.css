@@ -150,3 +150,26 @@ body {
   background: #f2f2f2;
   border-top: 2px solid #000;
 }
+/* MOBILE FIX: header background not cutting off */
+.top-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;          /* allow wrapping on small screens */
+  gap: 10px;
+  padding: 14px 16px;       /* a bit more padding */
+  background: #00cfd1;
+}
+
+/* Make the center block take full width when it needs to */
+@media (max-width: 600px){
+  .center{
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .nav{
+    flex-wrap: wrap;        /* nav can go to a second line */
+    row-gap: 8px;
+  }
+}
