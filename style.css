@@ -25,18 +25,24 @@ body {
 .center { flex: 1; text-align: center; }
 
 /* TS3M (DARKER BLUE, NEVER CHANGES) */
-.site-title {
-  font-size: 32px;
-  color: #1f4fd8;
+.site-title{
+  font-family: "Minecrafter", sans-serif; /* LOGO FONT */
+  font-size: 56px;                        /* BIG like image */
+  color: #1f4fd8;                         /* your blue */
   text-decoration: none;
   display: inline-block;
+  line-height: 1;
+  letter-spacing: 2px;
 }
+
+/* NEVER change color */
 .site-title:hover,
 .site-title:visited,
-.site-title:active {
+.site-title:active{
   color: #1f4fd8;
   text-decoration: none;
 }
+
 
 /* NAV (BLACK, turns WHITE on hover/click) */
 .nav {
