@@ -1,55 +1,41 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #8b1d2c;
+  background-color: #2F6FED; /* mid blue */
   color: white;
+  text-align: center;
 }
 
 header {
-  text-align: center;
-  padding: 30px;
+  padding: 40px 20px;
 }
 
 .buttons a {
-  background: #2e7d32;
+  background-color: #1E4FBF;
   color: white;
-  padding: 10px 16px;
-  border-radius: 6px;
+  padding: 12px 18px;
+  border-radius: 8px;
   text-decoration: none;
   margin: 5px;
   display: inline-block;
 }
 
-.video {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
-}
-
-.video iframe {
-  width: 560px;
-  height: 315px;
-  border-radius: 10px;
+.buttons a:hover {
+  background-color: #4A78C2;
 }
 
 .gallery {
-  padding: 20px;
+  padding: 30px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
 .card {
-  background: #1b5e20;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 6px;
+  background-color: #1E4FBF;
+  border-radius: 12px;
+  padding: 30px;
 }
