@@ -157,3 +157,46 @@ body {
   background: #f2f2f2;
   border-top: 2px solid #000000;
 }
+/* Projects grid like your screenshot */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.project-box {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.project-box img {
+  width: 100%;
+  height: 210px;              /* makes them uniform like the screenshot */
+  object-fit: cover;
+  border: 3px solid #000;
+  background: #fff;
+}
+
+.project-label {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #000;
+}
+
+/* Responsive: 2 columns then 1 */
+@media (max-width: 980px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 30px;
+  }
+}
+
+@media (max-width: 620px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
