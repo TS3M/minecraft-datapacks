@@ -1,9 +1,14 @@
+@font-face {
+  font-family: "Minecraft";
+  src: url("assets/fonts/Minecraftia.ttf");
+}
+
 body {
   margin: 0;
-  font-family: 'Press Start 2P', monospace;
   background-color: #2F6FED; /* mid blue */
   color: white;
   text-align: center;
+  font-family: "Minecraft", monospace;
 }
 
 header {
@@ -14,9 +19,9 @@ header {
   background-color: #1E4FBF;
   color: white;
   padding: 12px 18px;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
-  margin: 5px;
+  margin: 6px;
   display: inline-block;
 }
 
@@ -36,6 +41,7 @@ header {
 
 .card {
   background-color: #1E4FBF;
-  border-radius: 12px;
-  padding: 30px;
+  border-radius: 8px;
+  padding: 25px;
+  font-size: 12px; /* Minecraft fonts are small */
 }
