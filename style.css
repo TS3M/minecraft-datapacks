@@ -34,6 +34,14 @@ body {
   line-height: 1;
   letter-spacing: 2px;
 
+.site-title:hover,
+.site-title:visited,
+.site-title:active{
+  color: #1f4fd8;
+  text-decoration: none;
+}
+
+
   /* BLACK OUTLINE */
   text-shadow:
     text-shadow:
