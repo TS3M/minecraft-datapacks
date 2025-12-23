@@ -1,98 +1,107 @@
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-
-body {
+/* RESET */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: "Minecraftia", sans-serif;
-  background: #ffffff;
-  color: #111;
+  padding: 0;
 }
 
-/* HEADER */
+/* BASE */
+body {
+  font-family: "Minecraftia", sans-serif;
+  background: #ffffff;
+  color: #000000;
+}
+
+/* HEADER BAR */
 .top-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  padding: 12px 18px;
+  padding: 12px 20px;
   background: #1f7a1f;
-  color: #fff;
 }
 
+/* LEFT ICONS */
 .left-icons {
   display: flex;
-  align-items: center;
   gap: 10px;
-  min-width: 120px;
 }
 
-.icon {
+.left-icons a {
   text-decoration: none;
-  color: #fff;
   font-size: 18px;
-  line-height: 1;
 }
 
-.icon:hover { opacity: 0.85; }
-
+/* CENTER AREA */
 .center {
   text-align: center;
   flex: 1;
-  min-width: 200px;
 }
 
+/* TS3M TITLE — BLUE, NEVER CHANGES */
 .site-title {
-  display: inline-block;
+  font-size: 32px;
+  color: #3fa9f5;          /* BLUE */
   text-decoration: none;
-  color: #fff;
-  font-size: 30px;
-  letter-spacing: 1px;
+  display: inline-block;
 }
 
-.site-title:hover {
-  color: #ffd700;
+.site-title:visited,
+.site-title:hover,
+.site-title:active {
+  color: #3fa9f5;          /* ALWAYS BLUE */
+  text-decoration: none;
 }
 
+/* NAV LINKS — BLACK → WHITE */
 .nav {
   margin-top: 6px;
-  font-size: 13px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
 }
 
 .nav a {
-  color: #fff;
-  text-decoration: none;
+  color: #000000;          /* BLACK */
+  text-decoration: none;  /* NO UNDERLINE */
 }
 
-.nav a:hover {
-  text-decoration: underline;
+.nav a:visited {
+  color: #000000;          /* STAYS BLACK */
 }
 
+.nav a:hover,
+.nav a:active {
+  color: #ffffff;          /* WHITE ON HOVER/CLICK */
+}
+
+/* DOT SEPARATORS */
 .sep {
-  opacity: 0.75;
+  color: #000000;
+  user-select: none;
 }
 
+/* SUBSCRIBE BUTTON */
 .subscribe {
-  text-decoration: none;
   background: #ffd700;
-  color: #111;
+  color: #000000;
+  text-decoration: none;
   padding: 8px 12px;
-  border: 2px solid #111;
+  border: 2px solid #000000;
   font-size: 12px;
-  display: inline-block;
 }
 
-.subscribe:hover { filter: brightness(0.95); }
+.subscribe:hover {
+  filter: brightness(0.95);
+}
 
 /* CONTENT */
 .content {
-  padding: 22px;
+  padding: 24px;
 }
 
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -101,36 +110,33 @@ body {
   margin: 0 auto;
 }
 
+/* CARDS */
 .card {
-  display: block;
-  text-decoration: none;
-  color: #111;
-  border: 2px solid #111;
   background: #f2f2f2;
+  border: 2px solid #000000;
   padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
 }
 
 .card img {
   width: 100%;
-  height: auto;
-  display: block;
-  border: 2px solid #111;
-  background: #fff;
+  border: 2px solid #000000;
 }
 
 .card p {
-  margin: 10px 0 0;
+  margin-top: 10px;
   font-size: 14px;
-  text-align: center;
 }
 
 /* FOOTER */
 .footer {
+  margin-top: 30px;
+  padding: 14px;
   text-align: center;
-  padding: 14px 10px;
   font-size: 12px;
-  color: #333;
-  border-top: 2px solid #111;
+  color: #000000;
   background: #f2f2f2;
-  margin-top: 24px;
+  border-top: 2px solid #000000;
 }
