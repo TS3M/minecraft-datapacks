@@ -77,13 +77,30 @@ body {
   flex: 1;
 }
 
-/* TS3M title text */
-.ts3m-text {
-  font-size: 36px;
-  font-weight: bold;
-  color: blue;
-  text-shadow: 3px 3px 4px black;
+.site-title{
+  font-family: "Minecrafter", sans-serif;
+  font-size: 56px;
+  color: #1f4fd8;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  letter-spacing: 2px;
+
+  /* BLACK OUTLINE */
+  text-shadow:
+    3px 3px 0 #000,
+    -3px 3px 0 #000,
+    3px -3px 0 #000,
+    -3px -3px 0 #000;
 }
+
+.site-title:hover,
+.site-title:visited,
+.site-title:active{
+  color: #1f4fd8;
+  text-decoration: none;
+}
+
 
 .nav {
   display: flex;
