@@ -194,3 +194,9 @@ body {
   text-align: center;
   color: #333;
 }
+
+.header {
+  background-image: url("https://i.imgur.com/xoPdnz8.png");
+  background-size: cover;
+  background-position: center;
+}
