@@ -73,22 +73,18 @@ body {
   flex: 1;
 }
 
-.site-title{
-  font-family: "Minecrafter", sans-serif;
-  font-size: 70px;  /* Increased from 56px */
-  color: #1f4fd8;
-  text-decoration: none;
-  display: inline-block;
-  line-height: 1;
-  letter-spacing: 2px;
-
-  /* BLACK OUTLINE */
-  text-shadow:
-    3px 3px 0 #000,
-    -3px 3px 0 #000,
-    3px -3px 0 #000,
-    -3px -3px 0 #000;
+.site-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.site-title img {
+  height: 64px;        /* THIS controls logo size */
+  width: auto;         /* keeps aspect ratio */
+  image-rendering: pixelated; /* perfect for Minecraft style */
+}
+
 
 .site-title:hover,
 .site-title:visited,
