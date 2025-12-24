@@ -1,209 +1,204 @@
-/* RESET */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+/* =========================
+   TS3M - Clean Style.css
+   ========================= */
 
-/* BASE */
+/* --- Base --- */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: "Minecraftia", sans-serif;
+  font-family: "Minecraftia", system-ui, Arial, sans-serif;
   background: #ffffff;
-  color: #000000;
-}
-
-/* HEADER (CYAN) */
-.top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 20px;
-  background: #00cfd1; /* cyan */
-}
-
-/* ICONS */
-.left-icons { display: flex; gap: 10px; }
-.icon { color: #000; text-decoration: none; font-size: 18px; }
-
-/* CENTER */
-.center { flex: 1; text-align: center; }
-
-/* TS3M (DARKER BLUE, NEVER CHANGES) */
-.site-title{
-  font-family: "Minecrafter", sans-serif;
-  font-size: 56px;
-  color: #1f4fd8;
-  text-decoration: none;
-  display: inline-block;
-  line-height: 1;
-  letter-spacing: 2px;
-
-  /* BLACK OUTLINE (THICK) */
-  text-shadow:
-    4px 4px 0 #000,
-    -4px 4px 0 #000,
-    4px -4px 0 #000,
-    -4px -4px 0 #000;
-}
-
-.site-title:hover,
-.site-title:visited,
-.site-title:active{
-  color: #1f4fd8;
-  text-decoration: none;
-}
-
-/* NEVER change color */
-.site-title:hover,
-.site-title:visited,
-.site-title:active{
-  color: #1f4fd8;
-  text-decoration: none;
-}
-
-
-/* NAV (BLACK, turns WHITE on hover/click) */
-.nav {
-  margin-top: 6px;
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  font-size: 14px;
-}
-.nav a { color: #000; text-decoration: none; }
-.nav a:visited { color: #000; }
-.nav a:hover, .nav a:active { color: #fff; }
-.sep { color: #000; user-select: none; }
-
-/* SUBSCRIBE */
-.subscribe{
-  background:#ff0000;                 /* red */
-  color:#ffffff;                      /* white text */
-  font-family:"Minecraftia", sans-serif;
-  font-weight:900;                    /* THICK */
-  text-decoration:none;
-  padding:10px 18px;                  /* chunkier button */
-  border:3px solid #000;              /* black outline */
-  font-size:14px;
-  line-height:1;
-
-  /* text outline */
-  text-shadow:
-    2px 2px 0 #000,
-    -2px 2px 0 #000,
-    2px -2px 0 #000,
-    -2px -2px 0 #000;
-}
-
-/* hover + click = WHITE */
-.subscribe:hover,
-.subscribe:active{
-  background:#ffffff;
-  color:#ff0000;                      /* black text on white */
-}
-
-.subscribe:hover { filter: brightness(0.95); }
-
-/* CONTENT */
-.content { padding: 24px; }
-
-/* PROJECTS GRID (like your screenshot) */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(220px, 1fr));
-  gap: 40px 60px;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-.project-box {
-  display: block;
-  text-decoration: none;
   color: #000;
 }
 
-.project-box img {
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
-  border: 3px solid #000;
-  background: #fff;
-}
-
-.project-label {
-  margin-top: 18px;
-  font-size: 18px;
-  color: #000;
-}
-
-/* RESPONSIVE */
-@media (max-width: 980px) {
-  .projects-grid { grid-template-columns: repeat(2, minmax(200px, 1fr)); gap: 30px; }
-}
-@media (max-width: 620px) {
-  .projects-grid { grid-template-columns: 1fr; }
-}
-
-/* FOOTER */
-.footer {
-  margin-top: 30px;
-  padding: 14px;
-  text-align: center;
-  font-size: 12px;
-  color: #000;
-  background: #f2f2f2;
-  border-top: 2px solid #000;
-}
-/* MOBILE FIX: header background not cutting off */
-.top-bar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;          /* allow wrapping on small screens */
-  gap: 10px;
-  padding: 14px 16px;       /* a bit more padding */
-  background: #00cfd1;
-}
-
-/* Make the center block take full width when it needs to */
-@media (max-width: 600px){
-  .center{
-    flex: 1 1 100%;
-    text-align: center;
-  }
-
-  .nav{
-    flex-wrap: wrap;        /* nav can go to a second line */
-    row-gap: 8px;
-  }
-}
+/* --- Header / Top Bar --- */
 .top-bar{
   background:#27cfcf;
-  border:2px solid rgba(0,0,0,.25);
-  box-shadow: inset 0 0 0 2px rgba(255,255,255,.35);
   padding: 10px 16px;
 
   display:flex;
   align-items:center;
   justify-content:space-between;
+  gap: 14px;
+
+  /* clean border */
+  border: 3px solid #1aa5a5;
+  box-shadow: inset 0 0 0 2px #6ff5f5, 0 4px 0 #0f7f7f;
 
   position: relative;
   z-index: 10;
 }
 
+/* Left social icons */
 .left-icons{
   display:flex;
-  gap:10px;
   align-items:center;
+  gap: 10px;
 }
 
 .icon{
   display:flex;
   align-items:center;
   justify-content:center;
-  color:#fff;
+
+  width: 32px;
+  height: 32px;
+
+  color:#ffffff;
   text-decoration:none;
+  cursor:pointer;
+}
+
+.icon:hover{
+  filter: brightness(1.1);
 }
 
 .icon svg{
-  width:20px;
-  height:20px;
-  fill:currentColor;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
   display:block;
+}
+
+/* Center title + nav */
+.center{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  gap: 6px;
+  flex: 1;
+}
+
+.site-title{
+  font-family: "Minecrafter", "Minecraftia", system-ui, Arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 22px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Nav links */
+.nav{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav a{
+  color:#000;
+  text-decoration:none;
+  font-size: 12px;
+}
+
+.nav a:hover{
+  text-decoration: underline;
+}
+
+.sep{
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+/* Subscribe button (right) */
+.subscribe{
+  background:#000;
+  color:#fff;
+  text-decoration:none;
+  padding: 8px 12px;
+  border: 2px solid rgba(255,255,255,0.35);
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,0.12);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.subscribe:hover{
+  filter: brightness(1.1);
+}
+
+/* --- Page content wrapper --- */
+.content{
+  width: min(1100px, 92vw);
+  margin: 28px auto 40px;
+}
+
+/* --- Projects/Tutorials Grid --- */
+.projects-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 46px 60px;
+  align-items:start;
+}
+
+/* Card */
+.project-box{
+  display:block;
+  text-decoration:none;
+  color:#000;
+}
+
+.project-box img{
+  width:100%;
+  height: 170px;
+  display:block;
+  object-fit: cover;
+
+  border: 2px solid #000;
+  background:#fff;
+}
+
+/* Label under image */
+.project-label{
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* --- Footer --- */
+.footer{
+  text-align:center;
+  padding: 16px 10px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px){
+  .projects-grid{
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 34px 34px;
+  }
+
+  .site-title{ font-size: 20px; }
+}
+
+@media (max-width: 560px){
+  .top-bar{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-icons{
+    order: 1;
+  }
+
+  .center{
+    order: 2;
+    width: 100%;
+  }
+
+  .subscribe{
+    order: 3;
+  }
+
+  .projects-grid{
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
 }
