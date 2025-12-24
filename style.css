@@ -1,5 +1,5 @@
 /* =========================
-   TS3M - Fresh Style.css
+   TS3M - Image-based Style.css
    ========================= */
 
 /* --- Base --- */
@@ -18,12 +18,6 @@ body {
   font-family: "Minecraftia", system-ui, Arial, sans-serif;
   background: #ffffff;
   color: #000;
-}
-
-/* --- Load Custom Font --- */
-@font-face {
-  font-family: "Minecrafter";
-  src: url("Minecrafter.Reg.ttf") format("truetype");
 }
 
 /* --- Header / Top Bar --- */
@@ -83,21 +77,12 @@ body {
   flex: 1;
 }
 
-.site-title {
-  font-family: "Minecrafter", system-ui, Arial, sans-serif; /* Custom Minecraft-like font */
-  font-size: 60px; /* Adjusted for sharp, pixelated look */
-  color: #0000ff; /* Bright blue as per your image */
-  text-decoration: none;
-  font-weight: bold;
-  text-shadow: none; /* No shadow as per your request */
-  -webkit-text-stroke: 3px #000; /* 3px black outline for the text */
-  padding: 6px 16px; /* Padding for better alignment */
-  line-height: 1; /* Prevent line breaks inside title */
-  display: inline-block; /* Ensure it has the correct width */
-  transform: perspective(400px) rotateX(10deg); /* Depth effect */
+/* Site title image */
+.site-title img {
+  height: 60px;
+  width: auto;
 }
 
-/* --- Nav links --- */
 .nav {
   display: flex;
   align-items: center;
@@ -114,79 +99,30 @@ body {
   cursor: pointer; /* Ensure pointer cursor */
 }
 
-/* Remove underline and make text white on hover */
 .nav a:hover {
   color: #ffffff; /* White text on hover */
   text-decoration: none; /* No underline on hover */
 }
 
-/* Dots between links (make white and remove underline) */
 .sep {
   color: #ffffff;
   font-size: 12px;
   pointer-events: none;
 }
 
-/* Subscribe button (right) */
+/* --- Subscribe button --- */
 .subscribe {
-  background: #ff0000; /* Red background */
-  color: #ffffff; /* White text */
+  display: inline-block;
+  height: 40px; /* Make sure the button is properly sized */
+  width: auto;
   text-decoration: none;
   padding: 8px 16px;
-  border: 3px solid #000; /* 3px black border around the button */
-  font-size: 18px; /* Slightly larger font for better readability */
-  white-space: nowrap;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  -webkit-text-stroke: 2px #000; /* 2px black outline for the text */
-  transform: perspective(400px) rotateX(10deg); /* Depth effect */
 }
 
-.subscribe:hover {
-  background: #ffffff; /* White background on hover */
-  color: #ff0000; /* Red text on hover */
-}
-
-.subscribe:active {
-  background: #ffffff; /* White background on click */
-  color: #ff0000; /* Red text on click */
-  border-color: #ff0000; /* Red border on click */
-}
-
-/* --- Page content wrapper --- */
-.content {
-  width: min(1100px, 92vw);
-  margin: 28px auto 40px;
-}
-
-/* --- Projects/Tutorials Grid --- */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(220px, 1fr));
-  gap: 46px 60px;
-  align-items: start;
-}
-
-/* Card */
-.project-box {
-  display: block;
-  text-decoration: none;
-  color: #000;
-}
-
-/* Image box */
-.project-box img {
-  width: 100%;
-  height: 170px;
-  display: block;
-  object-fit: cover;
-  border: 2px solid #000;
-  background: #fff;
-}
-
-/* Label under image */
-.project-label {
-  margin-top: 10px;
-  font-size: 12px;
+.subscribe img {
+  height: 40px; /* Set height of the image */
+  width: auto; /* Maintain aspect ratio */
+  cursor: pointer;
 }
 
 /* --- Footer --- */
@@ -195,48 +131,5 @@ body {
   padding: 16px 10px;
   font-size: 12px;
   opacity: 0.9;
-  cursor: default; /* Remove underline effect from footer */
-}
-
-/* --- Footer fix --- */
-.footer a {
-  text-decoration: none; /* Remove underline from footer link */
-  color: #000;
-}
-
-/* --- Responsive --- */
-@media (max-width: 900px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
-    gap: 34px 34px;
-  }
-
-  .site-title {
-    font-size: 24px; /* Reduce size on mobile */
-  }
-}
-
-@media (max-width: 560px) {
-  .top-bar {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .left-icons {
-    order: 1;
-  }
-
-  .center {
-    order: 2;
-    width: 100%;
-  }
-
-  .subscribe {
-    order: 3;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 26px;
-  }
+  cursor: default;
 }
