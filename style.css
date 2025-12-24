@@ -81,11 +81,11 @@ body {
   font-family: "Minecraftia", system-ui, Arial, sans-serif; /* Minecraft-like font */
   letter-spacing: 2px;
   font-size: 48px; /* Exact size to match image */
-  color: #0062cc; /* Bright blue as per your image */
+  color: #0000ff; /* Bright blue */
   text-decoration: none;
   font-weight: bold;
   text-shadow: none; /* No shadow as per your request */
-  -webkit-text-stroke: 2px #000; /* 2px black outline */
+  -webkit-text-stroke: 2px #000; /* Black outline */
   padding: 6px 16px; /* Padding for better alignment */
   line-height: 1; /* Prevent line breaks inside title */
   display: inline-block; /* Make sure it's not taking full width */
@@ -127,7 +127,7 @@ body {
   color: #ffffff; /* White text */
   text-decoration: none;
   padding: 8px 16px;
-  border: 2px solid #000; /* 2px black border around the button */
+  border: 3px solid #000; /* Black border around the button */
   font-size: 14px;
   white-space: nowrap;
   transition: background-color 0.3s ease, color 0.3s ease;
