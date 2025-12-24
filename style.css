@@ -38,30 +38,27 @@ body {
 .left-icons {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;  /* Adjust the spacing between icons */
 }
 
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
+.left-icons .social-icon {
+  width: 40px;  /* New size for the icons */
+  height: 40px; /* Maintain aspect ratio */
+  transition: transform 0.3s ease;  /* Smooth hover effect */
 }
 
-.icon:hover {
-  filter: brightness(1.1);
+.left-icons .social-icon:hover {
+  transform: scale(1.1);  /* Slight zoom effect on hover */
 }
 
-.icon svg {
+/* If you still want to use SVGs, you can keep this part or remove it */
+.left-icons .social-icon svg {
   width: 20px;
   height: 20px;
   fill: currentColor;
   display: block;
 }
+
 
 /* Center title + nav */
 .center {
