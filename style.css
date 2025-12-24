@@ -89,7 +89,7 @@ body {
   padding: 4px 10px; /* Padding for the outline */
 }
 
-/* Nav links */
+/* --- Nav links --- */
 .nav {
   display: flex;
   align-items: center;
@@ -103,12 +103,20 @@ body {
   text-decoration: none; /* No underline by default */
   font-size: 12px;
   transition: color 0.3s ease;
+  cursor: pointer; /* Ensure pointer cursor */
 }
 
 /* Remove underline and make text white on hover */
 .nav a:hover {
   color: #ffffff; /* White text on hover */
   text-decoration: none; /* No underline on hover */
+}
+
+/* Dots between links (make white and remove underline) */
+.sep {
+  color: #ffffff;
+  font-size: 12px;
+  pointer-events: none;
 }
 
 /* Subscribe button (right) */
